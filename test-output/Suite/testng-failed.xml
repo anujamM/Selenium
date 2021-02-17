@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="resources.Listener"/>
+  </listeners>
+  <test thread-count="5" name="MyFirstTestNG">
+    <classes>
+      <class name="Selenium_Demo.Test1"/>
+    </classes>
+  </test> <!-- MyFirstTestNG -->
+  <test name="MyFirstTestNG(failed)">
+    <classes>
+      <class name="Selenium_Demo.Test1">
+        <methods>
+          <include name="main"/>
+        </methods>
+      </class> <!-- Selenium_Demo.Test1 -->
+    </classes>
+  </test> <!-- MyFirstTestNG(failed) -->
+</suite> <!-- Failed suite [Suite] -->
