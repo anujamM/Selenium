@@ -24,6 +24,7 @@ public class Test2 {
 
 		ArrayList<String> actuallist = new ArrayList<String>();
 		System.out.println("Initial actual list: " + actuallist);
+		
 
 		List<WebElement> myOptions = options.getOptions();
 		System.out.println(myOptions);
